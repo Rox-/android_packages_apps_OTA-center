@@ -1,4 +1,4 @@
-package com.androdevlinux.ota.updater;
+package com.teamcanjica.ota.updater;
 
 import android.content.Intent;
 import android.util.Log;
