@@ -75,14 +75,6 @@
 
                 </LinearLayout>
 
-            <TextView
-                android:id="@+id/website_sum"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:paddingLeft="10dp"
-                android:text="@string/website_summary"
-                android:textAppearance="?android:attr/textAppearanceSmall" />
-
         </LinearLayout>
 
         <TextView
@@ -161,23 +153,7 @@
                     android:layout_height="wrap_content"
                     android:src="@drawable/ic_donate" />
 
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:paddingTop="4dp"
-                    android:paddingLeft="5dp"
-                    android:text="@string/donate_title"
-                    android:textAppearance="?android:attr/textAppearanceMedium" />
-
                 </LinearLayout>
-
-            <TextView
-                android:id="@+id/website_sum"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:paddingLeft="10dp"
-                android:text="@string/donate_summary"
-                android:textAppearance="?android:attr/textAppearanceSmall" />
 
         </LinearLayout>
 

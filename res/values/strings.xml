@@ -34,7 +34,7 @@
     <string name="update_file_title">Update:</string>
     <string name="reboot">All done! Reboot your device now.</string>
     <string name="reboot_ok">Reboot now</string>
-    <string name="reboot_cancel">Don't reboot</string>
+    <string name="reboot_cancel">Don\'t reboot</string>
 
     <!-- TeamCanjicaOTA settings -->
     <string name="settings_title">OTA Settings</string>    
@@ -83,7 +83,9 @@
     <!-- TeamCanjicaOTA About -->
     <string name="about_home_url">TeamCanjica-ROMS</string>
     <string name="about_ota">OTACenter allows you to easily manage\n your ROM!</string>
+    <string name="about_copyright">\u00A9 Copyright Slimroms 2013 modified for TeamCanjica-ROMs</string>
     <string name="about_version">OTACenter 1.0</string>
+    <string name="about_contact">Contact us at rooobertinhooo@gmail.com</string>
     <string name="about_contact_text">Tell us what you think\nor let us know about a bug or problem</string>
     <string name="about_license">Open source licenses</string>
     <string name="about_license_text">OTACenter app:</string>
