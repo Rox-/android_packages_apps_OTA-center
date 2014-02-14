@@ -1,11 +1,11 @@
-package com.androdevlinux.center;
+package com.teamcanjica.center;
 
 import java.util.Locale;
 
-import com.androdevlinux.ota.androdevlinuxOTA;
-import com.androdevlinux.ota.R;
-import com.androdevlinux.ota.settings.About;
-import com.androdevlinux.sizer.androdevlinuxSizer;
+import com.teamcanjica.ota.teamcanjicaOTA;
+import com.teamcanjica.ota.R;
+import com.teamcanjica.ota.settings.About;
+import com.teamcanjica.sizer.teamcanjicaSizer;
 
 import android.app.ActionBar;
 import android.app.FragmentTransaction;
@@ -19,14 +19,14 @@ import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 
-public class androdevlinuxCenter extends FragmentActivity implements
+public class teamcanjicaCenter extends FragmentActivity implements
 ActionBar.TabListener{
     SectionsPagerAdapter mSectionsPagerAdapter;
     ViewPager mViewPager;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.androdevlinux_center);
+        setContentView(R.layout.teamcanjica_center);
 
         // Set up the action bar.
         final ActionBar actionBar = getActionBar();
@@ -114,11 +114,11 @@ ActionBar.TabListener{
         public android.support.v4.app.Fragment getItem(int page) {
             switch (page) {
             case 0:
-                return new Aboutandrodevlinux();
+                return new Aboutteamcanjica();
             case 1:
-                return new androdevlinuxOTA();
+                return new teamcanjicaOTA();
             case 2:
-                return new androdevlinuxSizer();
+                return new teamcanjicaSizer();
             }
             return null;
         }
@@ -127,7 +127,7 @@ ActionBar.TabListener{
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         MenuInflater inflater = getMenuInflater();
-        inflater.inflate(R.menu.androdevlinux_center, menu);
+        inflater.inflate(R.menu.teamcanjica_center, menu);
         return true;
     }
 

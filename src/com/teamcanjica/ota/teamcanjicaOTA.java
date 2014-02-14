@@ -1,4 +1,4 @@
-package com.androdevlinux.ota;
+package com.teamcanjica.ota;
 
 import java.io.BufferedReader;
 import java.io.DataInputStream;
@@ -21,13 +21,13 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.androdevlinux.ota.updater.UpdateChecker;
-import com.androdevlinux.ota.updater.UpdateListener;
-import com.androdevlinux.ota.settings.Settings;
-import com.androdevlinux.ota.R;
+import com.teamcanjica.ota.updater.UpdateChecker;
+import com.teamcanjica.ota.updater.UpdateListener;
+import com.teamcanjica.ota.settings.Settings;
+import com.teamcanjica.ota.R;
 import com.commonsware.cwac.wakeful.WakefulIntentService;
 
-public class androdevlinuxOTA extends Fragment implements OnSharedPreferenceChangeListener {
+public class teamcanjicaOTA extends Fragment implements OnSharedPreferenceChangeListener {
 
     private static final int ID_DEVICE_NAME = R.id.deviceName;
     private static final int ID_DEVICE_CODE_NAME = R.id.deviceCodename;
@@ -53,7 +53,7 @@ public class androdevlinuxOTA extends Fragment implements OnSharedPreferenceChan
 
     SharedPreferences prefs;
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        View view = inflater.inflate(R.layout.androdevlinux_ota, container, false);
+        View view = inflater.inflate(R.layout.teamcanjica_ota, container, false);
         return view;
     }
 
@@ -142,7 +142,7 @@ public class androdevlinuxOTA extends Fragment implements OnSharedPreferenceChan
                 String[] line = strLine.split("=");
                 if (line[0].equalsIgnoreCase("ro.product.device")) {
                     mStrCodename = line[1];
-                } else if (line[0].equalsIgnoreCase("androdevlinux.ota.version")) {
+                } else if (line[0].equalsIgnoreCase("teamcanjica.ota.version")) {
                     mStrCurVer = line[1];
                 } else if (line[0].equalsIgnoreCase("ro.product.model")) {
                     mStrDevice = line[1];
@@ -188,7 +188,7 @@ public class androdevlinuxOTA extends Fragment implements OnSharedPreferenceChan
     private void addShortCutFragment() {
         FragmentManager fragmentManager = this.getActivity().getFragmentManager();
         FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
-        androdevlinuxLinks Links = new androdevlinuxLinks();
+        teamcanjicaLinks Links = new teamcanjicaLinks();
         fragmentTransaction.replace(R.id.linksFragment, Links);
         fragmentTransaction.commit();
     }
@@ -196,7 +196,7 @@ public class androdevlinuxOTA extends Fragment implements OnSharedPreferenceChan
     private void setInitialUpdateInterval() {
         SharedPreferences prefs = this.getActivity().getSharedPreferences(LAST_INTERVAL, 0);
         long value = prefs.getLong(LAST_INTERVAL,0);
-        //set interval to 12h if user starts first time MahdiOTA and it was not installed by system before
+        //set interval to 12h if user starts first time TeamCanjicaOTA and it was not installed by system before
         //yes ask lazy tarak....he has this case ;)
         if (value == 0) {
             UpdateListener.interval = AlarmManager.INTERVAL_HALF_DAY;

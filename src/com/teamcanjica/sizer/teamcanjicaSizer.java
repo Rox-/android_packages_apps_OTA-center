@@ -1,4 +1,4 @@
-package com.androdevlinux.sizer;
+package com.teamcanjica.sizer;
 
 import java.io.BufferedWriter;
 import java.io.DataOutputStream;
@@ -29,9 +29,9 @@ import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.Toast;
 
-import com.androdevlinux.ota.R;
+import com.teamcanjica.ota.R;
 
-public class androdevlinuxSizer extends Fragment {
+public class teamcanjicaSizer extends Fragment {
     private final int STARTUP_DIALOG = 1;
     private final int DELETE_DIALOG = 2;
     private final int DELETE_MULTIPLE_DIALOG = 3;
@@ -44,7 +44,7 @@ public class androdevlinuxSizer extends Fragment {
     protected DataOutputStream dos;
 
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        View view = inflater.inflate(R.layout.androdevlinux_sizer, container, false);
+        View view = inflater.inflate(R.layout.teamcanjica_sizer, container, false);
         return view;
     }
 
@@ -77,7 +77,7 @@ public class androdevlinuxSizer extends Fragment {
         safetyList.add("Phone.apk");
         safetyList.add("Settings.apk");
         safetyList.add("SettingsProvider.apk");
-        safetyList.add("androdevlinuxCenter.apk");
+        safetyList.add("teamcanjicaCenter.apk");
         safetyList.add("Superuser.apk");
         safetyList.add("SystemUI.apk");
         safetyList.add("TelephonyProvider.apk");
@@ -187,7 +187,7 @@ public class androdevlinuxSizer extends Fragment {
                                         int id) {
                                     // action for ok
                                     // call delete
-                                    new androdevlinuxSizer.Deleter().execute(item);
+                                    new teamcanjicaSizer.Deleter().execute(item);
                                     // remove list entry
                                     adapter.remove(item);
                                     adapter.notifyDataSetChanged();
@@ -226,7 +226,7 @@ public class androdevlinuxSizer extends Fragment {
                                         }
                                     }
                                     adapter.notifyDataSetChanged();
-                                    new androdevlinuxSizer.Deleter().execute(itemsList.toArray(new String[itemsList.size()]));
+                                    new teamcanjicaSizer.Deleter().execute(itemsList.toArray(new String[itemsList.size()]));
                                 }
                             })
                     .setNegativeButton(R.string.cancel,
@@ -281,7 +281,7 @@ public class androdevlinuxSizer extends Fragment {
                         // of the selected item
                         short state = sdAvailable();
                         File path = new File(Environment
-                                .getExternalStorageDirectory() + "/androdevlinux");
+                                .getExternalStorageDirectory() + "/teamcanjica");
                         File savefile = new File(path + "/sizer.stf");
                         if (which == 0) {
                             // load profile action
@@ -310,7 +310,7 @@ public class androdevlinuxSizer extends Fragment {
                                         adapter.remove(item);
                                     }
                                     adapter.notifyDataSetChanged();
-                                    new androdevlinuxSizer.Deleter().execute(itemsList.toArray(new String[itemsList.size()]));
+                                    new teamcanjicaSizer.Deleter().execute(itemsList.toArray(new String[itemsList.size()]));
                                 } catch (FileNotFoundException e) {
                                     e.printStackTrace();
                                 }

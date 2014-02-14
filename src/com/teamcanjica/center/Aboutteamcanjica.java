@@ -1,7 +1,7 @@
-package com.androdevlinux.center;
+package com.teamcanjica.center;
 
-import com.androdevlinux.ota.R;
-import com.androdevlinux.sizer.androdevlinuxSizer;
+import com.teamcanjica.ota.R;
+import com.teamcanjica.sizer.teamcanjicaSizer;
 
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
@@ -36,7 +36,7 @@ import android.view.ViewGroup;
 import android.widget.LinearLayout;
 import android.widget.Toast;
 
-public class Aboutandrodevlinux extends Fragment{
+public class Aboutteamcanjica extends Fragment{
 
     private LinearLayout website;
     private LinearLayout source;
@@ -59,25 +59,15 @@ public class Aboutandrodevlinux extends Fragment{
     byte[] buf = new byte[1024];
 
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        View view = inflater.inflate(R.layout.androdevlinux_about, container, false);
+        View view = inflater.inflate(R.layout.teamcanjica_about, container, false);
         return view;
     }
 
     private final View.OnClickListener mActionLayouts = new View.OnClickListener() {
         @Override
         public void onClick(View v) {
-            if (v == website) {
-                launchUrl("https://sites.google.com/site/androdevlinux/");
-            } else if (v == source) {
-                launchUrl("http://github.com/percy-g2");
-            } else if (v == donate) {
-                launchUrl("http://forum.xda-developers.com/donatetome.php?u=4913184");
-            } else if (v == irc) {
-                if (isCallable(IRC_INTENT)){
-                    startActivity(IRC_INTENT);
-                } else {
-                    toast(getResources().getString(R.string.no_irc));
-                }
+            if (v == source) {
+                launchUrl("http://github.com/TeamCanjica");
             } else if (v == report) {
                 bugreport();
             }
@@ -158,7 +148,7 @@ public class Aboutandrodevlinux extends Fragment{
         }
         String kernel=getFormattedKernelVersion();
         //check if sdcard is available
-        androdevlinuxSizer sizer=new androdevlinuxSizer();
+        teamcanjicaSizer sizer=new teamcanjicaSizer();
         short state = sizer.sdAvailable();
         //initialize logfiles
         File extdir = Environment.getExternalStorageDirectory();
@@ -167,7 +157,7 @@ public class Aboutandrodevlinux extends Fragment{
         File logcat = new File(path + "/logcat.log");
         File last_kmsg = new File(path + "/last_kmsg.log");
         File kmsg = new File(path + "/kmsg.log");
-        File zip = new File(Environment.getExternalStorageDirectory() + "/androdevlinux/bugreport.zip");
+        File zip = new File(Environment.getExternalStorageDirectory() + "/teamcanjica/bugreport.zip");
         systemfile = savefile.toString();
         logfile = logcat.toString();
         last_kmsgfile = last_kmsg.toString();

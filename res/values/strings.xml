@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
- * Copyright (C) 2014 AndroDevLinux
+ * Copyright (C) 2014 TeamCanjica
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -16,8 +16,8 @@
 -->
 
 <resources>
-    <!-- AndroDevLinuxOTA main strings -->
-    <string name="app_name">AndroDevLinux-OTACenter</string>
+    <!-- TeamCanjicaOTA main strings -->
+    <string name="app_name">TeamCanjica-OTACenter</string>
     <string name="menu_settings">Settings</string>
     <string name="device_title">Device</string>
     <string name="device_name_title">Name:</string>
@@ -30,13 +30,13 @@
     <string name="device_info_title">Device Information</string>
     <string name="up_to_date_title">Your system is up to date</string>
     <string name="no_data_title">No data connection available</string>
-    <string name="error_reading_title">Cannot read AndroDevlinuxOTA properties</string>
+    <string name="error_reading_title">Cannot read TeamCanjicaOTA properties</string>
     <string name="update_file_title">Update:</string>
     <string name="reboot">All done! Reboot your device now.</string>
     <string name="reboot_ok">Reboot now</string>
-    <string name="reboot_cancel">Don\'t reboot</string>
+    <string name="reboot_cancel">Don't reboot</string>
 
-    <!-- AndroDevLinuxOTA settings -->
+    <!-- TeamCanjicaOTA settings -->
     <string name="settings_title">OTA Settings</string>    
     <string name="update_interval_title">Automatic update check interval</string>
     <string name="update_interval_summary">Set automatic update check interval</string>
@@ -45,54 +45,52 @@
     <string name="update_interval_hour">Every hour</string>
     <string name="update_interval_disable">Disable</string>
 
-    <!-- AndroDevLinuxOTA error messages -->
+    <!-- TeamCanjicaOTA error messages -->
     <string name="system_prop_error">Cannot read system properties</string>
     <string name="bad_url">Unable to get to download area.\nPlease inform your percy_g2@XDA!</string>
     <string name="menu_update">Look for Updates now</string>
     <string name="toast_text">Looking for ROM updates, please wait.</string>
     <string name="toast_no_data_text">No data connection. Please turn on</string>
 
-    <!-- AndroDevLinuxOTA shortcut fragment -->
+    <!-- TeamCanjicaOTA shortcut fragment -->
     <string name="short_cut_release_title">ROM related</string>
     <string name="short_cut_changelog_title">Changelog</string>
     <string name="short_cut_changelog_summary_update_available">Important!!! Read changelog and install instructions carefully</string>
-    <string name="short_cut_download_summary_update_available">New AndroDevlinux-Roms update available. Download here!</string>
+    <string name="short_cut_download_summary_update_available">New TeamCanjica-Roms update available. Download here!</string>
     <string name="short_cut_changelog_summary">Show changelogs and install instructions</string>
     <string name="short_cut_additional_title">Additional</string>
     <string name="short_cut_faq_title">FAQ</string>
     <string name="short_cut_faq_summary">Coming Soon!</string>
     <string name="short_cut_news_title">News</string>
-    <string name="short_cut_news_summary">Read about latest AndroDevLinux news</string>
-    <string name="short_cut_download_title">Download AndroDevlinux-Roms</string>
-    <string name="short_cut_download_uptodate_summary">Download AndroDevlinux-ROMS</string>
+    <string name="short_cut_news_summary">Read about latest TeamCanjica news</string>
+    <string name="short_cut_download_title">Download TeamCanjica-Roms</string>
+    <string name="short_cut_download_uptodate_summary">Download TeamCanjica-ROMS</string>
     <string name="short_cut_download_gapps_title">Download gapps</string>
     <string name="short_cut_download_gapps_summary">Download Gapps packages</string>
 
-    <string name="download_url">https://sites.google.com/site/androdevlinux/</string>
+    <string name="download_url">http://d-h.st/users/teamcanjica</string>
     <string name="changelog_url"></string>
     <string name="faq_url"></string>
     <string name="news_url"></string>
     <string name="gapps_url">http://bit.ly/ISA2tT</string>
     <string name="gapps_url_kitkat">http://bit.ly/ISA2tT</string>
 
-    <!-- AndroDevLinuxOTA update checker -->    
-    <string name="xml_url">http://androdevlinux.comze.com/ota.xml</string>
-    <string name="xml_url_kitkat">http://androdevlinux.comze.com/ota.xml</string>
-    <string name="notification_message">AndroDevlinux-ROMs update available</string>
+    <!-- TeamCanjicaOTA update checker -->    
+    <string name="xml_url"></string>
+    <string name="xml_url_kitkat"></string>
+    <string name="notification_message">TeamCanjica-ROMs update available</string>
 
-    <!-- AndroDevLinuxOTA About -->
-    <string name="about_home_url"><a href="https://sites.google.com/site/androdevlinux/">AndroDevlinux-ROMS</a></string>
+    <!-- TeamCanjicaOTA About -->
+    <string name="about_home_url">TeamCanjica-ROMS</string>
     <string name="about_ota">OTACenter allows you to easily manage\n your ROM!</string>
-    <string name="about_copyright">\u00A9 Copyright Slimroms 2013 modified for AndroDevlinux-ROMs</string>
     <string name="about_version">OTACenter 1.0</string>
-    <string name="about_contact">Contact us at proxthehacker@gmail.com</string>
     <string name="about_contact_text">Tell us what you think\nor let us know about a bug or problem</string>
     <string name="about_license">Open source licenses</string>
     <string name="about_license_text">OTACenter app:</string>
     <string name="about_license_url"><a href="">gpl(2)</a></string>
     <string name="menu_sizer">System Apps</string>
 
-    <!-- AndroDevLinuxOTA Sizer  -->
+    <!-- TeamCanjicaOTA Sizer  -->
     <string name="listsystem">list</string>
     <string name="sizer_title">System Apps</string>
     <string name="caution">Caution!</string>
@@ -117,19 +115,13 @@
     <!-- About -->
     <string name="about_title">AndroDev</string>
     <string name="devs">Developer</string>
-    <string name="website_title">AndroDevLinux Website</string>
-    <string name="website_summary">https://sites.google.com/site/androdevlinux\nFind all latest AndroDevLinux-Rom news here</string>
-    <string name="irc_title">ADL</string>
-    <string name="irc_summary">Join our IRC channel!\nChat with the AndroDevLinux-Rom Team and other users</string>
-    <string name="donate_title">Donate</string>
-    <string name="donate_summary">Donate to percy_g2 aka percy gahlot</string>
-    <string name="source_title">percy-g2 Sources</string>
-    <string name="source_summary">AndroDevLinux is fully open source.\nSource at github.com/percy-g2</string>
-    <string name="no_irc">ADLIRC App not found.</string>
-    <string name="center_summary"><b>OTACenter</b> provides tools &amp; information to help make your experience with AndroDevLinux-Rom even better. Upgrade automatically to the newest version of our ROM with <b>OTACenter</b>.</string>
+    <string name="website_title">TeamCanjica Website</string>
+    <string name="source_title">TeamCanjica Sources</string>
+    <string name="source_summary">TeamCanjica is fully open source.\nSource at github.com/TeamCanjica</string>
+    <string name="center_summary"><b>OTACenter</b> provides tools &amp; information to help make your experience with TeamCanjica-Rom even better. Upgrade automatically to the newest version of our ROM with <b>OTACenter</b>.</string>
     <string name="bugreport">Bugreport</string>
     <string name="bugreport_summary">Create a complete Bugreport.</string>
-    <string name="report_infosuccess">Created Systemreport, provide it to AndroDevLinux-Rom by attaching it to your Bugreport! You can find the Zip file on your SD-Card in a directory called \"percy\".</string>
+    <string name="report_infosuccess">Created Systemreport, provide it to TeamCanjica-Rom by attaching it to your Bugreport! You can find the Zip file on your SD-Card in a directory called \"teamcanjica\".</string>
     <string name="report_infofail">Failed to create Bugreport, please try again.</string>
 
 </resources>

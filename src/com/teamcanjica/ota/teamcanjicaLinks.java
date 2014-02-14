@@ -1,4 +1,4 @@
-package com.androdevlinux.ota;
+package com.teamcanjica.ota;
 
 import android.content.Intent;
 import android.content.SharedPreferences;
@@ -18,9 +18,9 @@ import java.io.DataInputStream;
 import java.io.FileInputStream;
 import java.io.InputStreamReader;
 
-import com.androdevlinux.ota.R;
+import com.teamcanjica.ota.R;
 
-public class androdevlinuxLinks extends Fragment {
+public class teamcanjicaLinks extends Fragment {
 
     private LinearLayout mChangelog;
     private LinearLayout mDownload;
@@ -37,7 +37,7 @@ public class androdevlinuxLinks extends Fragment {
     private String mStrCurFile;
 
     public View onCreateView (LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        View view = inflater.inflate(R.layout.androdevlinux_ota_links, container, false);
+        View view = inflater.inflate(R.layout.teamcanjica_ota_links, container, false);
         return view;
     }
 

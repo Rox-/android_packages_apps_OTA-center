@@ -1,2 +1,2 @@
 #  need to add a -keep line to stop ProGuard from renaming AlarmListener.
--keep class com.androdevlinux.ota.updater.UpdateListener
+-keep class com.teamcanjica.ota.updater.UpdateListener

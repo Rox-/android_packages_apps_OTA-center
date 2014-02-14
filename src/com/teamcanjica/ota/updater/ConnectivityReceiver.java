@@ -1,4 +1,4 @@
-package com.androdevlinux.ota.updater;
+package com.teamcanjica.ota.updater;
 
 import android.content.BroadcastReceiver;
 import android.content.ComponentName;

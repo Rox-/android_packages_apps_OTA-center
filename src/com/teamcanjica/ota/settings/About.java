@@ -1,4 +1,4 @@
-package com.androdevlinux.ota.settings;
+package com.teamcanjica.ota.settings;
 
 import android.app.ActionBar;
 import android.app.Activity;
@@ -9,8 +9,8 @@ import android.view.MenuItem;
 import android.widget.TextView;
 
 
-import com.androdevlinux.center.androdevlinuxCenter;
-import com.androdevlinux.ota.R;
+import com.teamcanjica.center.teamcanjicaCenter;
+import com.teamcanjica.ota.R;
 
 public class About extends Activity {
     @SuppressWarnings("unused")
@@ -48,7 +48,7 @@ public class About extends Activity {
         switch (item.getItemId()) {
             case android.R.id.home:
                 // app icon in action bar clicked; go home
-                Intent intent = new Intent(this, androdevlinuxCenter.class);
+                Intent intent = new Intent(this, teamcanjicaCenter.class);
                 intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_NEW_TASK);
                 startActivity(intent);
                 return true;

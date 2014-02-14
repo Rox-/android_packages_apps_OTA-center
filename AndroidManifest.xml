@@ -2,7 +2,7 @@
 
 
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.androdevlinux.ota"
+    package="com.teamcanjica.ota"
     android:versionCode="1"
     android:versionName="0.1" >
 
@@ -24,7 +24,7 @@
         android:launchMode="singleTask"
         android:theme="@style/OTA" >
         <activity
-            android:name="com.androdevlinux.center.androdevlinuxCenter"
+            android:name="com.teamcanjica.center.teamcanjicaCenter"
             android:configChanges="orientation|screenSize"
             android:label="@string/app_name" >
             <intent-filter>
@@ -33,22 +33,22 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="com.androdevlinux.ota.androdevlinuxOTA"
+            android:name="com.teamcanjica.ota.teamcanjicaOTA"
             android:label="@string/ota_title"
-            android:parentActivityName="com.androdevlinux.center.androdevlinuxCenter" >
+            android:parentActivityName="com.teamcanjica.center.teamcanjicaCenter" >
         </activity>
         <activity
-            android:name="com.androdevlinux.sizer.androdevlinuxSizer"
+            android:name="com.teamcanjica.sizer.teamcanjicaSizer"
             android:label="@string/sizer_title"
-            android:parentActivityName="com.androdevlinux.center.androdevlinuxCenter" >
+            android:parentActivityName="com.teamcanjica.center.teamcanjicaCenter" >
         </activity>
         <activity
-            android:name="com.androdevlinux.center.Aboutandrodevlinux"
+            android:name="com.teamcanjica.center.Aboutteamcanjica"
             android:label="@string/about_title"
-            android:parentActivityName="com.androdevlinux.center.androdevlinuxCenter" >
+            android:parentActivityName="com.teamcanjica.center.teamcanjicaCenter" >
         </activity>
 
-        <service android:name="com.androdevlinux.ota.updater.UpdateService" />
+        <service android:name="com.teamcanjica.ota.updater.UpdateService" />
 
         <receiver android:name="com.commonsware.cwac.wakeful.AlarmReceiver" >
             <intent-filter>
@@ -60,15 +60,15 @@
                 android:resource="@xml/wakeful" />
         </receiver>
         <receiver
-            android:name="com.androdevlinux.ota.updater.ConnectivityReceiver"
+            android:name="com.teamcanjica.ota.updater.ConnectivityReceiver"
             android:enabled="false" >
             <intent-filter>
                 <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
             </intent-filter>
         </receiver>
 
-        <activity android:name="com.androdevlinux.ota.settings.Settings" />
-        <activity android:name="com.androdevlinux.ota.settings.About" />
+        <activity android:name="com.teamcanjica.ota.settings.Settings" />
+        <activity android:name="com.teamcanjica.ota.settings.About" />
     </application>
 
 </manifest>

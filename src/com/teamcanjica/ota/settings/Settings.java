@@ -1,4 +1,4 @@
-package com.androdevlinux.ota.settings;
+package com.teamcanjica.ota.settings;
 
 import android.app.AlarmManager;
 import android.content.SharedPreferences;
@@ -8,15 +8,15 @@ import android.preference.Preference;
 import android.preference.PreferenceScreen;
 import android.preference.PreferenceActivity;
 
-import com.androdevlinux.ota.updater.UpdateListener;
-import com.androdevlinux.ota.R;
+import com.teamcanjica.ota.updater.UpdateListener;
+import com.teamcanjica.ota.R;
 
 import com.commonsware.cwac.wakeful.WakefulIntentService;
 
 public class Settings extends PreferenceActivity implements
         Preference.OnPreferenceChangeListener {
     @SuppressWarnings("unused")
-    private static final String TAG = "androdevlinuxOTASettings";
+    private static final String TAG = "teamcanjicaOTASettings";
 
     private static final String KEY_UPDATE_INTERVAL = "update_interval";
     private static final String LAST_INTERVAL = "lastInterval";
@@ -27,7 +27,7 @@ public class Settings extends PreferenceActivity implements
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        addPreferencesFromResource(R.xml.androdevlinux_ota_settings);
+        addPreferencesFromResource(R.xml.teamcanjica_ota_settings);
 
         PreferenceScreen prefs = getPreferenceScreen();
 
@@ -73,7 +73,7 @@ public class Settings extends PreferenceActivity implements
             } else {
                 SharedPreferences prefs = getSharedPreferences(LAST_INTERVAL, 0);
                 prefs.edit().putLong(LAST_INTERVAL, 1).apply();
-                com.androdevlinux.ota.updater.ConnectivityReceiver.disableReceiver(this);
+                com.teamcanjica.ota.updater.ConnectivityReceiver.disableReceiver(this);
                 WakefulIntentService.cancelAlarms(this);
             }
     }

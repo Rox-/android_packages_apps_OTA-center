@@ -1,4 +1,4 @@
-package com.androdevlinux.ota.updater;
+package com.teamcanjica.ota.updater;
 
 import android.app.Notification;
 import android.app.NotificationManager;
@@ -26,8 +26,8 @@ import org.xmlpull.v1.XmlPullParserFactory;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
 
-import com.androdevlinux.center.androdevlinuxCenter;
-import com.androdevlinux.ota.R;
+import com.teamcanjica.center.teamcanjicaCenter;
+import com.teamcanjica.ota.R;
 
 public class UpdateChecker extends AsyncTask<Context, Integer, String> {
     private static final String TAG = "UpdateChecker";
@@ -90,7 +90,7 @@ public class UpdateChecker extends AsyncTask<Context, Integer, String> {
                 String[] line = strLine.split("=");
                 if (line[0].equalsIgnoreCase("ro.product.device")) {
                     strDevice = line[1].trim();
-                } else if (line[0].equalsIgnoreCase("androdevlinux.ota.version")) {
+                } else if (line[0].equalsIgnoreCase("teamcanjica.ota.version")) {
                     CurVer = line[1].trim();
                 }
             }
@@ -104,7 +104,7 @@ public class UpdateChecker extends AsyncTask<Context, Integer, String> {
     protected String doInBackground(Context... arg) {
         mContext = arg[0];
         Message msg;
-        if (mContext != null && mContext.toString().contains("androdevlinuxCenter")) {
+        if (mContext != null && mContext.toString().contains("teamcanjicaCenter")) {
             msg = mHandler.obtainMessage(MSG_CREATE_DIALOG);
             mHandler.sendMessage(msg);
         }
@@ -195,7 +195,7 @@ public class UpdateChecker extends AsyncTask<Context, Integer, String> {
     protected void onPostExecute(String result) {
         super.onPostExecute(result);
         if (mNoLog == false) Log.d("\r\n"+TAG, "result= "+result+"\n context="+mContext.toString()+"\r\n");
-        if (mContext != null && mContext.toString().contains("androdevlinuxCenter")) {
+        if (mContext != null && mContext.toString().contains("teamcanjicaCenter")) {
             Message msg = mHandler.obtainMessage(MSG_CLOSE_DIALOG);
             mHandler.sendMessage(msg);
         } else if (result == null) {
@@ -216,7 +216,7 @@ public class UpdateChecker extends AsyncTask<Context, Integer, String> {
             .setSmallIcon(R.drawable.ic_notification_ota)
             .setLargeIcon(BitmapFactory.decodeResource(mContext.getResources(), R.drawable.ic_ota));
 
-        Intent intent = new Intent(mContext, androdevlinuxCenter.class);
+        Intent intent = new Intent(mContext, teamcanjicaCenter.class);
         intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
         final PendingIntent pendingIntent = PendingIntent.getActivity(mContext,
                     0, intent, PendingIntent.FLAG_ONE_SHOT);
@@ -229,7 +229,7 @@ public class UpdateChecker extends AsyncTask<Context, Integer, String> {
     }
 
     private void showInvalidLink() {
-        if (mContext != null && mContext.toString().contains("androdevlinuxCenter")) {
+        if (mContext != null && mContext.toString().contains("teamcanjicaCenter")) {
             Message msg = mHandler.obtainMessage(MSG_DISPLAY_MESSAGE, mContext.getString(R.string.bad_url));
             mHandler.sendMessage(msg);
         } else {
