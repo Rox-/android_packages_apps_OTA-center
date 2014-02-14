@@ -76,8 +76,8 @@
     <string name="gapps_url_kitkat">http://bit.ly/ISA2tT</string>
 
     <!-- TeamCanjicaOTA update checker -->    
-    <string name="xml_url"></string>
-    <string name="xml_url_kitkat"></string>
+    <string name="xml_url">https://raw2.github.com/Rox-/android_packages_apps_OTA-center/master/ota.xml</string>
+    <string name="xml_url_kitkat">https://raw2.github.com/Rox-/android_packages_apps_OTA-center/master/ota.xml</string>
     <string name="notification_message">TeamCanjica-ROMs update available</string>
 
     <!-- TeamCanjicaOTA About -->
