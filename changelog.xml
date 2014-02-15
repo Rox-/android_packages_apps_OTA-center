@@ -1,8 +1,8 @@
 <SlimOTA xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="ota.xsd">
 <Stable>
 <codina>
-<Filename>cm-10.2-20140215-UNOFFICIAL</Filename>
-<DownloadUrl>http://fs1.d-h.st/download/00100/Fk6/cm-10.2-20140215-UNOFFICIAL-codina.zip</DownloadUrl>
+<Filename>cm-10.2-20140208-UNOFFICIAL</Filename>
+<DownloadUrl>http://fs1.d-h.st/download/00099/pkc/cm-10.2-20140208-UNOFFICIAL-codina.zip</DownloadUrl>
 </codina>
 <janice>
 <Filename/>

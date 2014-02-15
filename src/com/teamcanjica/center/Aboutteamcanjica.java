@@ -152,7 +152,7 @@ public class Aboutteamcanjica extends Fragment{
         short state = sizer.sdAvailable();
         //initialize logfiles
         File extdir = Environment.getExternalStorageDirectory();
-        path = new File(extdir.getAbsolutePath().replace("emulated/0", "emulated/legacy") + "/Mahdi/Bugreport");
+        path = new File(extdir.getAbsolutePath().replace("emulated/0", "emulated/legacy") + "/teamcanjica");
         File savefile = new File(path + "/system.log");
         File logcat = new File(path + "/logcat.log");
         File last_kmsg = new File(path + "/last_kmsg.log");
