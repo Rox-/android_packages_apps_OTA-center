@@ -80,14 +80,14 @@ public class Aboutteamcanjica extends Fragment{
 
         //set LinearLayouts and onClickListeners
 
-        website = (LinearLayout) getView().findViewById(R.id.website);
-        website.setOnClickListener(mActionLayouts);
+        // website = (LinearLayout) getView().findViewById(R.id.website);
+        // website.setOnClickListener(mActionLayouts);
 
         source = (LinearLayout) getView().findViewById(R.id.source);
         source.setOnClickListener(mActionLayouts);
 
-        donate = (LinearLayout) getView().findViewById(R.id.donate);
-        donate.setOnClickListener(mActionLayouts);
+        // donate = (LinearLayout) getView().findViewById(R.id.donate);
+        // donate.setOnClickListener(mActionLayouts);
 
         // irc = (LinearLayout) getView().findViewById(R.id.irc);
         // irc.setOnClickListener(mActionLayouts);
