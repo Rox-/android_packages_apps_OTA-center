@@ -69,7 +69,7 @@
     <string name="short_cut_download_gapps_summary">Download Gapps packages</string>
 
     <string name="download_url">http://d-h.st/users/teamcanjica</string>
-    <string name="changelog_url">https://raw2.github.com/Rox-/android_packages_apps_OTA-center/master/changelog.xml</string>
+    <string name="changelog_url">https://raw2.github.com/Rox-/android_packages_apps_OTA-center/master/changelog.txt</string>
     <string name="faq_url"></string>
     <string name="news_url"></string>
     <string name="gapps_url">http://bit.ly/ISA2tT</string>
