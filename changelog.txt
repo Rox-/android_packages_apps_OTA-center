@@ -1,4 +1,9 @@
+22/02
 *CM sources update
-*
-*
-*
+*BT issues fixed
+*New STE Power hal
+*More OTA app fixes
+*Added Sioplus scheduler
+*Added PegasusQ governor
+*Better ram managenemt
+*Kernel reverted to 3.0.31 version
